@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --navy: #0F2744;
+    --navy-dark: #0A1B30;
+    --teal: #0F9D8A;
+    --teal-hover: #0C8575;
+    --orange: #F28C28;
+    --orange-hover: #D9771E;
+    --bg-page: #F8FAFC;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: #1E293B;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom utility colors */
+.bg-navy { background-color: #0F2744; }
+.text-navy { color: #0F2744; }
+.border-navy { border-color: #0F2744; }
+
+.bg-teal { background-color: #0F9D8A; }
+.hover\:bg-teal-hover:hover { background-color: #0C8575; }
+.text-teal { color: #0F9D8A; }
+.border-teal { border-color: #0F9D8A; }
+
+.bg-orange { background-color: #F28C28; }
+.hover\:bg-orange-hover:hover { background-color: #D9771E; }
+.text-orange { color: #F28C28; }
+.border-orange { border-color: #F28C28; }
